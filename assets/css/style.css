@@ -1,0 +1,32 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.navbar {
+    width: 100%;
+    padding: 30px;
+    background-color: white;
+    border: none;
+    margin-bottom: 0;
+}
+
+#hero {
+    top: 110px;
+    position: absolute;
+    background-image: url(../img/taxi.jpg);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+}
+
+#caja-amarilla {
+    background-color: #f7b617;
+    color: white;
+    position: relative;
+    top: 110px;
+    height: 300px;
+    width: 500px;
+}
