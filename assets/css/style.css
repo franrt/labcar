@@ -16,7 +16,7 @@ body {
     position: absolute;
     background-image: url(../img/taxi.jpg);
     width: 100%;
-    height: 100%;
+    height: 700px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center bottom;
@@ -27,11 +27,20 @@ body {
     color: white;
     position: absolute;
     top: 110px;
-    height: 300px;
-    width: 550px;
+    margin-top: 50px;
+    height: 340px;
+    width: 500px;
     right: 0;
     text-align: left;
-    line-height: 20px;
+    padding: 30px 30px 30px;
+}
+
+#caja-amarilla h1 {
+    line-height: 30px;
+}
+
+#logo-amarillo h4 img {
+    padding: 0 10px 0 10px;
 }
 
 input {
@@ -50,4 +59,43 @@ input {
     margin-top: 20px;
     border: none;
     color: #030303;
+    font-weight: bold;
+}
+
+#informacion {
+    top: 810px;
+    width: 100%;
+    background-color: #f7b617;
+    position: absolute;
+}
+
+#phone {
+    position: relative;
+    top: 2px;
+}
+
+#borde {
+    border: 1px solid white;
+    border-right: 1px solid white;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 80px;
+    right: 40px;
+}
+
+#inf {
+    color: white;
+    top: 70px;
+}
+
+#conduce {
+    top: 1314px;
+}
+
+#foto-drive {
+    background-image: url(../img/conduce.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
