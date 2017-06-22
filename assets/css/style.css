@@ -13,7 +13,7 @@ body {
 
 #hero {
     top: 110px;
-    position: absolute;
+    position: relative;
     background-image: url(../img/taxi.jpg);
     width: 100%;
     height: 700px;
@@ -55,7 +55,7 @@ input {
     background-color: #f7b617;
 }
 
-.btn {
+.btn-blanco {
     margin-top: 20px;
     border: none;
     color: #030303;
@@ -89,13 +89,57 @@ input {
 }
 
 #conduce {
-    top: 1314px;
-}
-
-#foto-drive {
     background-image: url(../img/conduce.jpg);
-    width: 100%;
+    top: 600px;
+    position: relative;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-position: center;
+    width: 100%;
+    right: 0;
 }
+
+#txt-drive {
+    height: 400px;
+    right: 0;
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+}
+
+.btn-amarillo {
+    margin-top: 20px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    background-color: #f7b617;
+    ;
+}
+
+#precio {
+    height: 500px;
+    width: 100%;
+    background-color: #f7b617;
+    position: absolute;
+    top: 1700px;
+    color: white;
+}
+
+#mapas {
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.tarifa {
+    font-size: 14px;
+    padding: 10px 10px 10px 5px;
+    margin: 20px;
+    display: inline-flex;
+    justify-content: space-between;
+    width: 300px;
+    border-radius: 20px;
+    color: white;
+    border: 1px solid white;
+    background-color: #f7b617;
+}
+
+#map {}
