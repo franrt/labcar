@@ -4,7 +4,7 @@
 <head>
     <title></title>
     <meta charset="UTF-8">
-
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="assets/css/style.css" rel="stylesheet">
@@ -109,12 +109,18 @@
                     <div class="col-md-6 col-xs-12" id="direcciones">
                         <h1>Tarifas</h1>
                         <h4>Conoce las tarifas LabCar aquí</h4>
-                        <div><input type="text" name="" placeholder="Ingrese su punto de partida" class="tarifa start"></div>
-                        <div><input type="text" name="" placeholder="Ingrese su destino" class="tarifa end"></div>
+                        <!-- inputs, con js se autocompleta -->
+                        <input class="tarifa" id="start" class="form-control" type="text" placeholder="Ingrese su punto de partida...">
+                        <input class="tarifa" id="end" class="form-control" type="text" placeholder="Ingresa su destino...">
+                        <div><button id="ruta" type="button" class="btn btn-show btn-blanco">¡Trazar ruta!</button></div>
                     </div>
-                    <div class=" col-md-6 col-xs-12" id="map">
-                        <iframe width="450" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/directions?origin=place_id:EjFQdW1hIDExODAsIFJlY29sZXRhLCBSZWdpw7NuIE1ldHJvcG9saXRhbmEsIENoaWxl&destination=place_id:ChIJt2AMwNjOYpYRGobELMMDtZk&key=AIzaSyA9voKkJSNRqLehSX03Bb1HkJ01YU8g64U"
-                            allowfullscreen></iframe>
+
+                    <div class="col-md-6 col-xs-12">
+                        <!--aqui va el mapa NO está funcional No CONSIGO QUE APAREZCA CON JS así que usé un Embed Map de google donde se pueden poner las coordenadas-->
+                        <div class="col-md-6" id="map">
+                            <iframe width="450" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/directions?origin=place_id:EjFQdW1hIDExODAsIFJlY29sZXRhLCBSZWdpw7NuIE1ldHJvcG9saXRhbmEsIENoaWxl&destination=place_id:ChIJt2AMwNjOYpYRGobELMMDtZk&key=AIzaSyA9voKkJSNRqLehSX03Bb1HkJ01YU8g64U"
+                                allowfullscreen id="map"></iframe>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -127,11 +133,11 @@
         <div class="row" id="col1">
             <div class="col-md-12 col-sm-12">
                 <div class="col-md-3">
-                    <a href="#">face</a>
-                    <a href="#">twitter</a>
-                    <a href="#">in</a>
-                    <a href="#">appstore</a>
-                    <a href="#">ggplay</a>
+                    <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-apple" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-play" aria-hidden="true"></i></a>
                 </div>
 
                 <div class="col-md-3" id="col2">
@@ -163,8 +169,13 @@
             </div>
         </div>
     </section>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- API key -->
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- API key -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlSXueL1g5OMSbnm568_6J8WcfjOI-18w&libraries=places&callback=initMap" async defer></script>
     <script type="text/javascript" src="asset/js/main.js"></script>
 </body>
 
